@@ -1,22 +1,22 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background: #cc9966
 }
 
-
-
-header{
+header {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
   background: #cc9966;
 }
-header #background{
+
+header #background {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,88 +24,82 @@ header #background{
   height: 100%;
   background: url(desert.jpg);
 }
-#background{
+
+#background {
   text-align: center;
   font-size: 3em;
 }
-header h1{
+
+header h1 {
   padding-top: 70px;
 }
 
-
-
-.profile{
+.profile {
   padding: 100px;
-  color:#fff;
+  color: #fff;
 }
-.profile h1{
-  font-size:  3em;
+
+.profile h1 {
+  font-size: 3em;
   padding-bottom: 10px;
 }
-.profile p{
-  font-size:  1.2em;
-    text-align: justify;
+
+.profile p {
+  font-size: 1.2em;
+  text-align: justify;
 }
-.pfp{
+
+.pfp {
   float: left;
   margin-right: 25px;
   width: 350px;
   box-shadow: 1px 1px 7px black;
 }
 
-
-
-
-.samplegrid{
-display: grid;
-grid-template-columns: 50% 50%;
-justify-content: center;
-align-content: center;
-background: #d79e52;
+.samplegrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content: center;
+  align-content: center;
+  background: #d79e52;
 }
 
-
-
-.grid1{
-background: #d79e52;
-color: white;
-padding: 15px;
+.grid1 {
+  background: #d79e52;
+  color: white;
+  padding: 15px;
 }
 
-.grid2{
-background: #d88145;
-color: white;
-padding: 15px;
+.grid2 {
+  background: #d88145;
+  color: white;
+  padding: 15px;
 }
-.background2{
+
+.background2 {
   background: #d88145;
 }
 
-
-
-.fishpreview{
-position: relative;
-}
-
-.trdpreview{
+.fishpreview {
   position: relative;
 }
 
-
+.trdpreview {
+  position: relative;
+}
 
 /* make the images zoom out to appear clickable */
-.fishpreview:hover{
+.fishpreview:hover {
   transition: .7s;
   transform: scale(.95);
   box-shadow: 2px 2px 5px black;
 }
-.trdpreview:hover{
-transition: .7s;
-transform: scale(.95);
-box-shadow: -2px 2px 5px black;
+
+.trdpreview:hover {
+  transition: .7s;
+  transform: scale(.95);
+  box-shadow: -2px 2px 5px black;
 }
-
-
 
 /* make the overlay activate on hover */
 .trdpreview:hover .trdoverlay {
@@ -116,8 +110,6 @@ box-shadow: -2px 2px 5px black;
 .fishpreview:hover .fishoverlay {
   width: 100%;
 }
-
-
 
 /* sliding overlay over image */
 .fishoverlay {
@@ -146,10 +138,8 @@ box-shadow: -2px 2px 5px black;
   transition: .5s ease;
 }
 
-
-
 /* text on the overlay */
-.fishtext{
+.fishtext {
   color: white;
   font-size: 2.5em;
   position: absolute;
@@ -163,7 +153,7 @@ box-shadow: -2px 2px 5px black;
 
 .trdtext {
   color: white;
-  font-size:   2.5em;
+  font-size: 2.5em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -171,12 +161,9 @@ box-shadow: -2px 2px 5px black;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
-
 }
 
-
-
-footer{
+footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: space-around;
@@ -184,46 +171,49 @@ footer{
   text-align: center;
   background-color: #b35f25;
 }
-footer a:hover{
+
+footer a:hover {
   color: blue;
 }
-footer a{
+
+footer a {
   text-decoration: none;
   color: white;
 }
-
-
 
 /* responsive changes*/
 @media screen and (max-width: 768px) {
 
   /*stack grids */
-.samplegrid{
-  grid-template-columns: 1fr;
-}
+  .samplegrid {
+    grid-template-columns: 1fr;
+  }
 
-.grid2{
+  .grid2 {
     min-height: 40vh;
-}
-.grid1{
-  min-height: 40vh;
-}
-footer{
-  grid-template-columns: 1fr;
-}
-/* re-order footer */
-footer h2{
-  order: -1;
-}
+  }
 
-/* less dramatic margins for smaller screens */
-.profile{
-  padding-right: 50px;
-  padding-left: 50px;
-}
+  .grid1 {
+    min-height: 40vh;
+  }
 
-.pfp{
-  float: none;
-  margin: auto;
-}
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  /* re-order footer */
+  footer h2 {
+    order: -1;
+  }
+
+  /* less dramatic margins for smaller screens */
+  .profile {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .pfp {
+    float: none;
+    margin: auto;
+  }
 }
