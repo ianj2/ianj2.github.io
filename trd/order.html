@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Ian waddle 11/8/21 order.html  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Order Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;1,800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/5a1835c0af.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="headerimg">
+    <img src="header2.png" alt="" style=" width: 100%; background-size: cover;">
+
+  </div>
+  <nav>
+    <div class="flex-nav">
+      <a href="#" class="home">Home</a>
+      <a href="order.html" class="order">Order Online</a>
+      <a href="items.html" class="shirts">Shirts</a>
+      <a href="#" class="location">Our Location</a>
+    </div>
+  </nav>
+
+  <div class="col1">
+    <form action="#" method="Get">
+      <fieldset>
+        <legend style="margin-bottom:25px;">
+          <h1>Enter Your Selection</h1>
+          Please fill out the form and We will be in touch about your order within 1-2 buisness days!
+        </legend>
+        <label for="firstname">
+          <input type="text" name="firstname" id="firstname" required placeholder="First Name" />
+        </label>
+        <label for="lastname">
+          <input type="text" name="lastname" id="lastname" required placeholder="Last Name" />
+        </label>
+        <br>
+        <label for="phone">
+          <input type="tel" name="phone" id="phone" required placeholder="Phone Number" />
+        </label>
+        <br>
+        <select name="shirtstyle" id="shirtstyle">
+          <option value="#">Select One:</option>
+          <option value="#">Toyota Technical</option>
+          <option value="#">Retro Toyota Parts Logo</option>
+          <option value="#">'YOTA' Truck</option>
+          <option value="#">'YOTA' 4WD Truck Japanese</option>
+          <option value="#">'YOTA' Logo </option>
+          <option value="#">Toyota Three Technicals</option>
+        </select>
+        <label for="quantity">
+          <input name="quantity" id="quantity" type="number" min="1" max="5000" step="1">
+        </label>
+      </fieldset>
+      <input class="submit" type="submit" value="Place Order">
+    </form>
+
+
+    <div class="testimonial">
+
+      <i class="fas fa-star" style="color: yellow;"></i><i class="fas fa-star" style="color: yellow;"></i><i class="fas fa-star" style="color: yellow;"></i><i class="fas fa-star" style="color: yellow;"></i><i class="fas fa-star"
+        style="color: yellow;"></i>
+      <p class="review"> Fit and feel of the shirt was great! Couldnt ask for cooler graphics!</p>
+      <br>
+      <h4>- John Doe <br>
+        <br> 11/9/21
+      </h4>
+    </div>
+    <div class="contact">
+      <h2>Connect With Us</h2>
+      <p>For support or any questions: <br> Email Us at: <a href="mailto:yotamfg@pro.com">yotamfg@pro.com</a></p>
+
+    </div>
+    <div class="socials">
+      <h2>Socials</h2>
+      <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.youtube.com/"><i class="fab fa-youtube-square"></i></a>
+      <a href="https://www.instagram.com/"><i class="fab fa-instagram-square"></i></a>
+    </div>
+  </div>
+
+  <footer>
+    <h3> &copy; 2021 &bull; YOTA Clothing Group LLC </h3>
+  </footer>
+</body>
+
+</html>

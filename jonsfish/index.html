@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--Ian Waddle, 10/26/2021,index.html-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css" />
+  <title>John's Fishin'</title>
+  <script src="https://kit.fontawesome.com/5a1835c0af.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="head">
+    <div class="socials">
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube-square"></i></a>
+    </div>
+    <div class="socials2">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-youtube-square"></i>
+    </div>
+    <div class="dropdown">
+      <i class="fas fa-bars"></i>
+      <div class="dropdown-content">
+        <a href="index.html">Home</a>
+        <a href="#">Scheduling</a>
+        <a href="product.html">Services</a>
+        <a href="#">About Us</a>
+
+      </div>
+    </div>
+
+    <h1>John's Fishin'</h1>
+    <h2>-BULL SHOALS LAKE-</h2>
+    <div class="bignav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Scheduling</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="slideshow" style="max-width: 100%">
+    <img class="mySlides" src="view.jpg" alt="view of bullshoals from the shore" style="width:100%">
+    <img class="mySlides" src="party.jpg" alt="pontoon boat on bull shoals" style="width:100%">
+    <img class="mySlides" src="main.jpg" alt="couple fishing on the lake in a fishing boat" style="width:100%">
+  </div>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 5000); // Change image every 5 seconds
+    }
+  </script>
+  <div id="body">
+    <h3>Come fish with us</h3>
+    <br>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua. Mi quis hendrerit dolor magna eget est lorem ipsum dolor.
+      Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Donec ultrices tincidunt
+      arcu non sodales neque. Sociis natoque penatibus et magnis dis. Lobortis feugiat vivamus at
+      augue eget arcu. Et leo duis ut diam quam nulla porttitor massa id. Lorem ipsum dolor sit
+      amet consectetur adipiscing. Sociis natoque penatibus et magnis dis parturient montes. Et
+      netus et malesuada fames. Arcu vitae elementum curabitur vitae.
+    </p>
+    <img class="shrink" src="small2.jpg" alt="small fishing boat" style="max-width: 100% ">
+    <p>
+      Lorem ipsum dolor sit amet,consectetur adipiscing elit, sed do eiusmod tempor incididunt
+      ut labore et dolore magna aliqua. Mi quis hendrerit dolor magna eget est lorem ipsum dolor.
+      Nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices. Donec ultrices tincidunt
+      arcu non sodales neque. Sociis natoque penatibus et magnis dis. Lobortis feugiat vivamus at
+      augue eget arcu. Et leo duis ut diam quam nulla porttitor massa id. Lorem ipsum dolor sit
+      amet consectetur adipiscing. Sociis natoque penatibus et magnis dis parturient montes. Et
+      netus et malesuada fames. Arcu vitae elementum curabitur vitae.
+    </p>
+    <img class="pic2" src="boat.jpg" alt="small bass boat on the lake" style="max-width: 100%;">
+  </div>
+  <footer>
+    Contact us at <a href="tel:18008008000">1-800-800-8000</a>
+  </footer>
+</body>
+
+</html>
