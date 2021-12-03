@@ -69,13 +69,18 @@ header h1 {
   color: white;
   padding: 15px;
 }
-
+.grid1 p{
+  font-size: 1.2em;
+}
 .grid2 {
   background: #d88145;
   color: white;
   padding: 15px;
 }
 
+.grid2 p{
+  font-size: 1.2em;
+}
 .background2 {
   background: #d88145;
 }
